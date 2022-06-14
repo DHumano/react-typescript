@@ -3,10 +3,11 @@ import { Routes, Route } from 'react-router-dom'; // , Link
 import Home from 'components/home';
 import UserList from 'components/userList';
 import './App.css';
+import * as S from './Styled';
 
 const App = () => (
   <div className="App">
-    <h1>Welcome to React Router!</h1>
+    <S.title>User configuration</S.title>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/list" element={<UserList />} />
