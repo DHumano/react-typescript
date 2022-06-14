@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'; // , Link
-import Home from 'components/home/Home';
+import Home from 'components/home';
+import UserList from 'components/userList';
 import './App.css';
 
 const App = () => (
@@ -8,6 +9,7 @@ const App = () => (
     <h1>Welcome to React Router!</h1>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/list" element={<UserList />} />
     </Routes>
   </div>
 );
